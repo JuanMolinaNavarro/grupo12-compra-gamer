@@ -11,9 +11,10 @@ const Header = () => {
             <img src={cgLogo} className="logo" alt="compra gamer logo" />
             <input type="text" placeholder='Buscar productos' />
             <button className='busquedaHeader'>
-                <FaRegUser color='#f0320a'/>
-                Ingresá</button>
-            <button><MdOutlineShoppingCart color='#f0320a' />
+                <FaRegUser color='#f0320a' /> Ingresá
+            </button>
+            <button>
+                <MdOutlineShoppingCart color='#f0320a' />
             </button>
         </header>
     )

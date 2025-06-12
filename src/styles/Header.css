@@ -1,11 +1,41 @@
-header{
+body {
+  margin: 0;
+}
+
+
+header {
   background-color: #212121;
+  display: block;
+  width: 100vw;
+
 }
 
 .logo {
-  height: 6em;
+  height: 4em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
 
+input {
+  border-radius: 3px;
+  border: 1px solid #fff;
+}
+
+input:focus {
+  outline: 1px solid #f0320a;
+  border: 0px;
+  border-radius: 3px;
+}
+
+button {
+  background: none;
+  border: 0px;
+  padding: 0.5em;
+  margin: 0px 5px;
+}
+
+button:hover {
+  background-color: #4b4b4d;
+  border-radius: 3px;
+}
