@@ -2,14 +2,15 @@ body {
   margin: 0;
 }
 
-
 header {
+  display: flex;
   background-color: #212121;
-  display: block;
   width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logo {
@@ -21,13 +22,13 @@ header {
 
 input {
   border-radius: 3px;
-  border: 1px solid #fff;
+  border: 0px solid #fff;
+  background-color: transparent;
 }
 
 input:focus {
-  outline: 1px solid #f0320a;
   border: 0px;
-  border-radius: 3px;
+ outline: 0px;
 }
 
 button {
@@ -40,4 +41,39 @@ button {
 button:hover {
   background-color: #4b4b4d;
   border-radius: 3px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: border-color 0.2s ease;
+}
+
+.searchBar:focus-within {
+  border-color: #f0320a;
+}
+
+#searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  background: transparent;
+}
+
+.searchIcon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.searchIcon:hover {
+  transform: scale(1.1);
 }
