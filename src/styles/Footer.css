@@ -1,0 +1,80 @@
+.footer-container {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12vh;
+  background-color: #212121;
+  color: #ffffffde;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+#data-fiscal {
+  width: 73px;
+  height: 100px;
+}
+#great-place-to-work {
+  width: 59px;
+  height: 101px;
+}
+#btn-ayuda {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #f0320a;
+  display: inline-flex;
+  font-family: Montserrat;
+  gap: 6px;
+  padding: 8px 16px;
+  text-align: center;
+}
+#btn-arrepentimiento {
+  display: inline-flex;
+  align-items: center;
+  font-family: Montserrat;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  background-color: transparent;
+  color: #fff;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+#btn-arrepentimiento:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #f0320a;
+}
+.footer-container div:not(:first-child) {
+  border-left: 1px solid #ffffff;
+  padding-left: 30px;
+}
+
+.footer-container__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#btn-terminos {
+  text-decoration: underline;
+}
+#btn-terminos:hover {
+  background-color: transparent;
+}
