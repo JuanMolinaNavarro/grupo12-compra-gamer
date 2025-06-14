@@ -19,12 +19,7 @@ const Footer = () => {
       <div className="footer-container__div">
         <h3>Seguinos en</h3>
         <FaInstagram />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+
       </div>
       <div className="footer-container__div">
         <img
@@ -33,7 +28,7 @@ const Footer = () => {
           alt="great-place-to-work"
         />
         <a href="https://compragamer.hiringroom.com/jobs" target="_blank">
-          Trabaja con nosotros{" "}
+          Trabaja con nosotros
         </a>
       </div>
     </footer>
