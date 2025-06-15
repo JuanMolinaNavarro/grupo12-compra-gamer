@@ -1,0 +1,15 @@
+.bordeImg {
+  border-radius: 8%;
+  padding: 35px;
+}
+
+.carousel-indicators .active {
+  background-color: orange;
+}
+
+.iconos {
+  width: 40px;
+  height: 40px;
+  color: orangered;
+}
+

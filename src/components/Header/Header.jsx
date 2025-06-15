@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header>
+        <header>    
             <Link to="/">
                 <img src={cgLogo} className="logo" alt="compra gamer logo" />
             </Link>
