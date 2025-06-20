@@ -1,0 +1,32 @@
+.navContainer {
+    padding: 0 12px;
+    color: #000000de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000de;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover{
+    color: #f0320a;
+    transition: 0.2s ease;
+}
