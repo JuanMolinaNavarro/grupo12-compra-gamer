@@ -1,4 +1,3 @@
-import React from 'react'
 import cgLogo from '../../../public/compra-gamer.svg'
 import '../../styles/Header.css'
 import { MdOutlineShoppingCart } from "react-icons/md";

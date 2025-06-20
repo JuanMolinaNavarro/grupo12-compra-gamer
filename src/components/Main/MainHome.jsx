@@ -1,7 +1,8 @@
-import React from 'react'
 import NavBar from './NavBar'
 import Carrusel from './MainHome/Carrusel'
 import Recuadro from './MainHome/Recuadro'
+import Destacados from './MainHome/Destacados'
+import Armatupc from './MainHome/Armatupc'
 import "../../styles/MainHome.css"
 
 const MainHome = () => {
@@ -9,11 +10,11 @@ const MainHome = () => {
     <div>
         <NavBar></NavBar>
         <Carrusel></Carrusel>
-        <h3 className='text-start'>Conoce nuestros  <strong>productos destacados</strong> </h3>
+        <Destacados></Destacados>
+        <Armatupc></Armatupc>
         <h3 className='text-start'>Explora nuestras <strong>categorias</strong> </h3>
         <Recuadro></Recuadro>
-
-    </div>
+     </div>
   )
 }
 
