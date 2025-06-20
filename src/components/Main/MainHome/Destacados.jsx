@@ -60,7 +60,7 @@ const Destacados = () => {
                 <Card.Body className="w-60">
                   <Card.Title>{destacados.nombre}</Card.Title>
                   <Card.Text>{destacados.text}</Card.Text>
-                  <Card.Text className="fu-bold"><strong>${destacados.precio}</strong></Card.Text>
+                  <Card.Text><strong>${destacados.precio}</strong></Card.Text>
                 </Card.Body>
               </Card>
             </Col>
