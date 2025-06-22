@@ -4,9 +4,10 @@ import "../../styles/AuthModal.css";
 import { RiVideoFill } from "react-icons/ri";
 
 const AuthModal = ({ show, handleClose }) => {
-  const [mode, setMode] = useState("login"); // login o register
+  //en esta parte utilizo show en el caso de que sea true, se me muestra el modal en el caso que sea false no se me lo muestra y el handleClose se ejecuta cuando cera el modal
+  const [mode, setMode] = useState("login"); // el mode lo usamos para saber en que modo estamos si  en el login o register
 
-  // Estados de los inputs
+  // Estados de los inputs para el useState
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,6 +16,7 @@ const AuthModal = ({ show, handleClose }) => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  //esto lo hacemos para cuando tenemos llenos lo inputs los reseteamos
   const resetFields = () => {
     setFirstName("");
     setLastName("");
@@ -25,6 +27,7 @@ const AuthModal = ({ show, handleClose }) => {
     setConfirmPassword("");
   };
 
+  // el switchToregister y el login sirven poder cambiar de login y register y ademas limpia el input
   const switchToRegister = () => {
     resetFields();
     setMode("register");
@@ -38,9 +41,9 @@ const AuthModal = ({ show, handleClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // en este apartado realizamos la logica del inicio  de sesio la cual al ingresar nos muestra el email y la clave y al ingresar al register nos muestra los demas inputs
     if (mode === "login") {
       console.log("Login con:", email, password);
-      // lógica para login
     } else {
       if (password !== confirmPassword) {
         alert("Las contraseñas no coinciden");
@@ -54,7 +57,6 @@ const AuthModal = ({ show, handleClose }) => {
         phoneNumber,
         password,
       });
-      // lógica para registro
     }
 
     handleClose();
@@ -78,7 +80,6 @@ const AuthModal = ({ show, handleClose }) => {
         <Form onSubmit={handleSubmit}>
           {mode === "register" && (
             <>
-              {/* Nombre y apellido */}
               <Form.Group className="mb-3">
                 <div className="row">
                   <div className="col">
@@ -105,8 +106,6 @@ const AuthModal = ({ show, handleClose }) => {
               </Form.Group>
             </>
           )}
-
-          {/* Email */}
           <Form.Group controlId="formEmail" className="mb-3">
             <Form.Control
               type="email"
@@ -117,10 +116,8 @@ const AuthModal = ({ show, handleClose }) => {
               className="auth-modal-input"
             />
           </Form.Group>
-
           {mode === "register" && (
             <>
-              {/* Teléfono */}
               <Form.Group className="mb-3">
                 <div className="row">
                   <div className="col-4">
@@ -147,8 +144,6 @@ const AuthModal = ({ show, handleClose }) => {
               </Form.Group>
             </>
           )}
-
-          {/* Contraseña y confirmar contraseña (en login solo se muestra una) */}
           <Form.Group className="mb-3">
             <div className="row">
               <div className="col">
@@ -175,8 +170,7 @@ const AuthModal = ({ show, handleClose }) => {
               )}
             </div>
           </Form.Group>
-
-          {/* Botón principal */}
+          {/*boton principal*/}
           <Button
             variant="primary"
             type="submit"
@@ -185,8 +179,7 @@ const AuthModal = ({ show, handleClose }) => {
           >
             {mode === "login" ? "Iniciar Sesión" : "Registrarse"}
           </Button>
-
-          {/* Botón para cambiar entre login y registro */}
+          {/* este es el btn para cambiar de login a register */}
           {mode === "login" ? (
             <Button
               variant="outline-secondary"

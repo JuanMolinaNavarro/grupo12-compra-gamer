@@ -1,0 +1,27 @@
+.subtitulo-naranja {
+  color: #f0320a;
+}
+.titulo-normal {
+  font-weight: normal;
+}
+.contenido-gris {
+  color: #999;
+}
+.card-borde-grueso {
+  border: 2px solid #ccc !important;
+}
+.card-item {
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.card-item:hover {
+  background-color: #fff2f0; /* un naranja clarito suave */
+}
