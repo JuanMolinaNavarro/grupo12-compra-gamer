@@ -6,6 +6,7 @@ import Armatupc from './MainHome/Armatupc'
 import "../../styles/MainHome.css"
 import Nuestrascategorias from './MainHome/Nuestrascategorias'
 import Mejoresmarcas from './MainHome/Mejoresmarcas'
+import Footer from '../Footer/Footer'
 
 const MainHome = () => {
   return (
@@ -17,7 +18,7 @@ const MainHome = () => {
         <Recuadro></Recuadro>
         <Nuestrascategorias></Nuestrascategorias>
         <Mejoresmarcas></Mejoresmarcas>
-        
+        <Footer></Footer>
      </div>
   )
 }
