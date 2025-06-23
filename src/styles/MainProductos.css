@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.containerMain {
+    display: grid;
+    grid-template-rows: 200px 200px 80vh;
+    grid-template-columns: 1fr 3fr;
+    gap: 10vw;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.containerDestacados {
+    width: auto;
+    text-align: start;
+}
+

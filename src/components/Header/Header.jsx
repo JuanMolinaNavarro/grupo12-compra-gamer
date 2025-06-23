@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cgLogo from "../../../public/compra-gamer.svg";
+import cgLogo from "../../assets/compra-gamer.svg";
 import "../../styles/Header.css";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa6";
