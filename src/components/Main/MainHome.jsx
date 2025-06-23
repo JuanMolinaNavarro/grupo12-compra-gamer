@@ -10,7 +10,7 @@ import Footer from '../Footer/Footer'
 
 const MainHome = () => {
   return (
-    <div>
+    <div className="mainhome container d-flex flex-column align-items-center">
         <NavBar></NavBar>
         <Carrusel></Carrusel>
         <Destacados></Destacados>
