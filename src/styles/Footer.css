@@ -8,7 +8,7 @@
   gap: 12vh;
   background-color: #212121;
   color: #ffffffde;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100vw;

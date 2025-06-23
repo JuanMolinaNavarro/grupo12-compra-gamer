@@ -1,0 +1,702 @@
+[
+  {
+    "nombre": "Notebook Asus TUF A15 FA507NU‑HQ108W",
+    "precio": 1715500,
+    "marca": "Asus",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Notebook Asus TUF F15 FX507ZC4‑HN087W",
+    "precio": 1580000,
+    "marca": "Asus",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Notebook Dell G15 5520 i5-12500H RTX3050",
+    "precio": 1450000,
+    "marca": "Dell",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Notebook HP Victus 16 i7-12700H RTX3050Ti",
+    "precio": 1850000,
+    "marca": "HP",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Notebook Lenovo Legion 5 15ACH6 Ryzen 7 RTX3060",
+    "precio": 1950000,
+    "marca": "Lenovo",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Procesador AMD Ryzen 7 7800X3D",
+    "precio": 592450,
+    "marca": "AMD",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Procesador AMD Ryzen 5 7600X",
+    "precio": 292500,
+    "marca": "AMD",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Procesador Intel Core i7-13700K",
+    "precio": 515000,
+    "marca": "Intel",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Procesador Intel Core i5-13600K",
+    "precio": 365000,
+    "marca": "Intel",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Mother ASUS PRIME B450M‑A II/CSM",
+    "precio": 108850,
+    "marca": "Asus",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Mother MSI B550 Tomahawk",
+    "precio": 195000,
+    "marca": "MSI",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Placa de Video Nvidia RTX 4070",
+    "precio": 950000,
+    "marca": "Nvidia",
+    "categoria": "Placas de Video",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Placa de Video AMD RX 7800 XT",
+    "precio": 820000,
+    "marca": "AMD",
+    "categoria": "Placas de Video",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Memoria RAM Kingston 16GB DDR4 3200MHz",
+    "precio": 56000,
+    "marca": "Kingston",
+    "categoria": "Memorias RAM",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Memoria RAM Corsair Vengeance 32GB DDR5",
+    "precio": 135000,
+    "marca": "Corsair",
+    "categoria": "Memorias RAM",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Disco SSD Samsung 980 Pro 1TB",
+    "precio": 82000,
+    "marca": "Samsung",
+    "categoria": "Almacenamiento",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Disco HDD Seagate Barracuda 2TB",
+    "precio": 54000,
+    "marca": "Seagate",
+    "categoria": "Almacenamiento",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Cooler CPU Cooler Master Hyper 212",
+    "precio": 48000,
+    "marca": "Cooler Master",
+    "categoria": "Refrigeracion",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Gabinete NZXT H510",
+    "precio": 115000,
+    "marca": "NZXT",
+    "categoria": "Gabinetes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Fuente Corsair RM750x 80+ Gold",
+    "precio": 123000,
+    "marca": "Corsair",
+    "categoria": "Fuentes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 1",
+    "precio": 1390975,
+    "marca": "Asus",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 2",
+    "precio": 283478,
+    "marca": "HP",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 3",
+    "precio": 102451,
+    "marca": "Intel",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 4",
+    "precio": 626778,
+    "marca": "AMD",
+    "categoria": "Placas de Video",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 5",
+    "precio": 563575,
+    "marca": "Gigabyte",
+    "categoria": "Memorias RAM",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 6",
+    "precio": 518106,
+    "marca": "MSI",
+    "categoria": "Almacenamiento",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 7",
+    "precio": 342632,
+    "marca": "Corsair",
+    "categoria": "Refrigeracion",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 8",
+    "precio": 264947,
+    "marca": "Kingston",
+    "categoria": "Gabinetes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 9",
+    "precio": 1469141,
+    "marca": "Logitech",
+    "categoria": "Fuentes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 10",
+    "precio": 1193716,
+    "marca": "Razer",
+    "categoria": "Monitores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 11",
+    "precio": 232323,
+    "marca": "Asus",
+    "categoria": "Perifericos",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 12",
+    "precio": 1288352,
+    "marca": "HP",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 13",
+    "precio": 934834,
+    "marca": "Intel",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 14",
+    "precio": 116653,
+    "marca": "AMD",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 15",
+    "precio": 112489,
+    "marca": "Gigabyte",
+    "categoria": "Placas de Video",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 16",
+    "precio": 246493,
+    "marca": "MSI",
+    "categoria": "Memorias RAM",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 17",
+    "precio": 508517,
+    "marca": "Corsair",
+    "categoria": "Almacenamiento",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 18",
+    "precio": 537925,
+    "marca": "Kingston",
+    "categoria": "Refrigeracion",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 19",
+    "precio": 1109806,
+    "marca": "Logitech",
+    "categoria": "Gabinetes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 20",
+    "precio": 1312524,
+    "marca": "Razer",
+    "categoria": "Fuentes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 21",
+    "precio": 105649,
+    "marca": "Asus",
+    "categoria": "Monitores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 22",
+    "precio": 1227016,
+    "marca": "HP",
+    "categoria": "Perifericos",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 23",
+    "precio": 466992,
+    "marca": "Intel",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 24",
+    "precio": 1412906,
+    "marca": "AMD",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 25",
+    "precio": 1192825,
+    "marca": "Gigabyte",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 26",
+    "precio": 929796,
+    "marca": "MSI",
+    "categoria": "Placas de Video",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 27",
+    "precio": 512297,
+    "marca": "Corsair",
+    "categoria": "Memorias RAM",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 28",
+    "precio": 992059,
+    "marca": "Kingston",
+    "categoria": "Almacenamiento",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 29",
+    "precio": 1285779,
+    "marca": "Logitech",
+    "categoria": "Refrigeracion",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 30",
+    "precio": 633408,
+    "marca": "Razer",
+    "categoria": "Gabinetes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 31",
+    "precio": 63628,
+    "marca": "Asus",
+    "categoria": "Fuentes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 32",
+    "precio": 384829,
+    "marca": "HP",
+    "categoria": "Monitores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 33",
+    "precio": 936286,
+    "marca": "Intel",
+    "categoria": "Perifericos",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 34",
+    "precio": 763557,
+    "marca": "AMD",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 35",
+    "precio": 632738,
+    "marca": "Gigabyte",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 36",
+    "precio": 376064,
+    "marca": "MSI",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 37",
+    "precio": 501545,
+    "marca": "Corsair",
+    "categoria": "Placas de Video",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 38",
+    "precio": 755889,
+    "marca": "Kingston",
+    "categoria": "Memorias RAM",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 39",
+    "precio": 264350,
+    "marca": "Logitech",
+    "categoria": "Almacenamiento",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 40",
+    "precio": 244502,
+    "marca": "Razer",
+    "categoria": "Refrigeracion",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 41",
+    "precio": 846765,
+    "marca": "Asus",
+    "categoria": "Gabinetes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 42",
+    "precio": 252828,
+    "marca": "HP",
+    "categoria": "Fuentes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 43",
+    "precio": 802834,
+    "marca": "Intel",
+    "categoria": "Monitores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 44",
+    "precio": 771327,
+    "marca": "AMD",
+    "categoria": "Perifericos",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 45",
+    "precio": 1316105,
+    "marca": "Gigabyte",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 46",
+    "precio": 604740,
+    "marca": "MSI",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 47",
+    "precio": 141122,
+    "marca": "Corsair",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 48",
+    "precio": 1013483,
+    "marca": "Kingston",
+    "categoria": "Placas de Video",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 49",
+    "precio": 1174551,
+    "marca": "Logitech",
+    "categoria": "Memorias RAM",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 50",
+    "precio": 311779,
+    "marca": "Razer",
+    "categoria": "Almacenamiento",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 51",
+    "precio": 843844,
+    "marca": "Asus",
+    "categoria": "Refrigeracion",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 52",
+    "precio": 215255,
+    "marca": "HP",
+    "categoria": "Gabinetes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 53",
+    "precio": 1207713,
+    "marca": "Intel",
+    "categoria": "Fuentes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 54",
+    "precio": 664839,
+    "marca": "AMD",
+    "categoria": "Monitores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 55",
+    "precio": 1368353,
+    "marca": "Gigabyte",
+    "categoria": "Perifericos",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 56",
+    "precio": 1347129,
+    "marca": "MSI",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 57",
+    "precio": 808403,
+    "marca": "Corsair",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 58",
+    "precio": 1260795,
+    "marca": "Kingston",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 59",
+    "precio": 453258,
+    "marca": "Logitech",
+    "categoria": "Placas de Video",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 60",
+    "precio": 195867,
+    "marca": "Razer",
+    "categoria": "Memorias RAM",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 61",
+    "precio": 146100,
+    "marca": "Asus",
+    "categoria": "Almacenamiento",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 62",
+    "precio": 1436769,
+    "marca": "HP",
+    "categoria": "Refrigeracion",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 63",
+    "precio": 527937,
+    "marca": "Intel",
+    "categoria": "Gabinetes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 64",
+    "precio": 656890,
+    "marca": "AMD",
+    "categoria": "Fuentes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 65",
+    "precio": 217335,
+    "marca": "Gigabyte",
+    "categoria": "Monitores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 66",
+    "precio": 538197,
+    "marca": "MSI",
+    "categoria": "Perifericos",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 67",
+    "precio": 261815,
+    "marca": "Corsair",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 68",
+    "precio": 847182,
+    "marca": "Kingston",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 69",
+    "precio": 632952,
+    "marca": "Logitech",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 70",
+    "precio": 1000870,
+    "marca": "Razer",
+    "categoria": "Placas de Video",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 71",
+    "precio": 1383126,
+    "marca": "Asus",
+    "categoria": "Memorias RAM",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 72",
+    "precio": 815108,
+    "marca": "HP",
+    "categoria": "Almacenamiento",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 73",
+    "precio": 391110,
+    "marca": "Intel",
+    "categoria": "Refrigeracion",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 74",
+    "precio": 826325,
+    "marca": "AMD",
+    "categoria": "Gabinetes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 75",
+    "precio": 795056,
+    "marca": "Gigabyte",
+    "categoria": "Fuentes",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 76",
+    "precio": 489368,
+    "marca": "MSI",
+    "categoria": "Monitores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 77",
+    "precio": 1455459,
+    "marca": "Corsair",
+    "categoria": "Perifericos",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 78",
+    "precio": 609893,
+    "marca": "Kingston",
+    "categoria": "Equipos y Notebooks",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 79",
+    "precio": 1483503,
+    "marca": "Logitech",
+    "categoria": "Procesadores",
+    "imagen": "sample.jpg"
+  },
+  {
+    "nombre": "Producto Genérico 80",
+    "precio": 1409028,
+    "marca": "Razer",
+    "categoria": "Mothers",
+    "imagen": "sample.jpg"
+  }
+]

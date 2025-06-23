@@ -1,0 +1,33 @@
+.nested-toggle {
+  margin: 6px 0;
+}
+
+.toggle-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 8px;
+  color: #333;
+  user-select: none;
+}
+
+.chevron-icon {
+  color: #f0320a;
+  transition: transform 0.2s ease;
+}
+
+.chevron-icon.rotated {
+  transform: rotate(90deg);
+}
+
+.toggle-title {
+  font-weight: 500;
+}
+
+.toggle-children {
+  margin-left: 35px;
+  text-align: start;
+  font-size: 12.6px;
+  color: rgba(0, 0, 0, .87);
+}

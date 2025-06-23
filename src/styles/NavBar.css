@@ -24,6 +24,7 @@ nav a {
     font-weight: 500;
     display: flex;
     align-items: center;
+    font-size: 16px;
 }
 
 nav a:hover{

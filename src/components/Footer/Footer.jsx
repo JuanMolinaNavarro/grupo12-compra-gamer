@@ -19,7 +19,6 @@ const Footer = () => {
       <div className="footer-container__div">
         <h3>Seguinos en</h3>
         <FaInstagram />
-
       </div>
       <div className="footer-container__div">
         <img
