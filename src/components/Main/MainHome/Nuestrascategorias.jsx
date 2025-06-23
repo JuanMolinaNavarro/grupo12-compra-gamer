@@ -57,7 +57,7 @@ const Nuestrascategorias = () => {
                             </Card>
                         </Col>
                         <Col xs={6} sm={4} md={4}>
-                            <Card as={Link} className='mb-3 overflow-hidden ' to={`/Producto/gabinetes`} >
+                            <Card as={Link} className='mb-3 overflow-hidden ' to={`/Producto/placadevideo`} >
                                 <Card.Img src="https://storage.prompt-hunt.workers.dev/clhxb6qzm0001k00gvyvqhnxi_1" className="img-fluid cardCategoriasimg" />
                                 <Card.Text className="position-absolute bottom-0 start-50 translate-middle-x text-light fs-5 p-2">
                                 <strong>Gabinetes</strong>

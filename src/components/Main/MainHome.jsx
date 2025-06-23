@@ -5,6 +5,7 @@ import Destacados from './MainHome/Destacados'
 import Armatupc from './MainHome/Armatupc'
 import "../../styles/MainHome.css"
 import Nuestrascategorias from './MainHome/Nuestrascategorias'
+import Mejoresmarcas from './MainHome/Mejoresmarcas'
 
 const MainHome = () => {
   return (
@@ -15,6 +16,7 @@ const MainHome = () => {
         <Armatupc></Armatupc>
         <Recuadro></Recuadro>
         <Nuestrascategorias></Nuestrascategorias>
+        <Mejoresmarcas></Mejoresmarcas>
         
      </div>
   )
