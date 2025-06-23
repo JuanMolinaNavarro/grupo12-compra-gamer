@@ -24,6 +24,11 @@
   width: 60%;
 }
 
+.cardDestacado{
+  text-decoration: none;
+  text-decoration-color: black;
+}
+
 .cardDestacado:hover {
   transform: scale(1.05); 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
@@ -33,4 +38,17 @@
   background-image: url("https://topesdegama.com/app/uploads-topesdegama.com/2022/09/graficas-portada.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.cardCategoriasimg{
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+.cardCategoriasimg:hover {
+    transform: scale(1.1); 
+}
+
+.cardCategoriasPrincipal{
+  height: 500px;
 }

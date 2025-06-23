@@ -4,6 +4,7 @@ import Recuadro from './MainHome/Recuadro'
 import Destacados from './MainHome/Destacados'
 import Armatupc from './MainHome/Armatupc'
 import "../../styles/MainHome.css"
+import Nuestrascategorias from './MainHome/Nuestrascategorias'
 
 const MainHome = () => {
   return (
@@ -12,8 +13,9 @@ const MainHome = () => {
         <Carrusel></Carrusel>
         <Destacados></Destacados>
         <Armatupc></Armatupc>
-        <h3 className='text-start'>Explora nuestras <strong>categorias</strong> </h3>
         <Recuadro></Recuadro>
+        <Nuestrascategorias></Nuestrascategorias>
+        
      </div>
   )
 }

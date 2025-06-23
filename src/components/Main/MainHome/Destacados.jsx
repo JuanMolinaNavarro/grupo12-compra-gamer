@@ -9,49 +9,55 @@ const Destacados = () => {
       nombre: "Auriculares Corsair",
       text: "Surround Dolby Audio 7.1",
       URL: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40800_Auriculares_Corsair_HS55_White_Surround_Dolby_Audio_7.1_PC_MAC_SWITCH_PS5_bee3805e-mini.jpg",
-      precio:"90.500"
+      precio:"90.500",
+      id:"1"
     },
     {
       nombre: "Auriculares Corsair",
       text: "Surround Dolby Audio 7.1",
       URL: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40800_Auriculares_Corsair_HS55_White_Surround_Dolby_Audio_7.1_PC_MAC_SWITCH_PS5_bee3805e-mini.jpg",
-      precio:"90.500"
+      precio:"90.500",
+      id:"1"
     },
     {
       nombre: "Auriculares Corsair",
       text: "Surround Dolby Audio 7.1",
       URL: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40800_Auriculares_Corsair_HS55_White_Surround_Dolby_Audio_7.1_PC_MAC_SWITCH_PS5_bee3805e-mini.jpg",
-      precio:"90.500"
+      precio:"90.500",
+      id:"1"
     },
     {
       nombre: "Auriculares Corsair",
       text: "Surround Dolby Audio 7.1",
       URL: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40800_Auriculares_Corsair_HS55_White_Surround_Dolby_Audio_7.1_PC_MAC_SWITCH_PS5_bee3805e-mini.jpg",
-      precio:"90.500"
+      precio:"90.500",
+      id:"1"
     },
     {
       nombre: "Auriculares Corsair",
       text: "Surround Dolby Audio 7.1",
       URL: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40800_Auriculares_Corsair_HS55_White_Surround_Dolby_Audio_7.1_PC_MAC_SWITCH_PS5_bee3805e-mini.jpg",
-      precio:"90.500"
+      precio:"90.500",
+      id:"1"
     },
     {
       nombre: "Auriculares Corsair",
       text: "Surround Dolby Audio 7.1",
       URL: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40800_Auriculares_Corsair_HS55_White_Surround_Dolby_Audio_7.1_PC_MAC_SWITCH_PS5_bee3805e-mini.jpg",
-      precio:"90.500"
+      precio:"90.500",
+      id:"1"
     },
     
   ]
 
   return (
     <>
-      <h3 className='text-start'>Conocé nuestros <strong>productos destacados</strong></h3>
+      <h3 className='text-start'>Conocé nuestros <strong>Productos Destacados</strong></h3>
       <Container fluid>
         <Row>
           {destacados.map((destacados, index) => (
-            <Col sm={12} md={4} className="mb-4" key={index}>
-              <Card className="d-flex flex-row cardDestacado">
+            <Col sm={12} md={4} className="mb-4" key={index} >
+              <Card as={Link} className="d-flex flex-row cardDestacado" to={`/Producto/${destacados.id}`}>
                 <Card.Img
                   variant="top"
                   src={destacados.URL}
