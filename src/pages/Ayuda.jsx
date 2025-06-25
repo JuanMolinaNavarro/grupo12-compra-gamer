@@ -6,7 +6,9 @@ import Help from "../components/Ayuda/Help";
 const Ayuda = () => {
   return (
     <div>
+      <Header></Header>
       <Help />
+      <Footer></Footer>
     </div>
   );
 };

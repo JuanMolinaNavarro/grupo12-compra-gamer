@@ -18,7 +18,6 @@ const MainHome = () => {
         <Recuadro></Recuadro>
         <Nuestrascategorias></Nuestrascategorias>
         <Mejoresmarcas></Mejoresmarcas>
-        <Footer></Footer>
      </div>
   )
 }

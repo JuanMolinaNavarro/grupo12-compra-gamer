@@ -4,6 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
 import "../../styles/Help.css";
 import AuthModal from "../Auth/AuthModal";
+import NavBar from "../Main/NavBar";
 
 const CardGrid = () => {
   const [activo, setActivo] = useState(null);
@@ -77,6 +78,7 @@ const CardGrid = () => {
         paddingBottom: "40px",
       }}
     >
+      <NavBar></NavBar>
       {/* Título principal con línea naranja */}
       <h2
         style={{ fontWeight: "bold", marginBottom: "8px", textAlign: "left" }}

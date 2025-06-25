@@ -9,6 +9,7 @@ const Productos = () => {
         <div>
             <Header></Header>
             <MainProductos></MainProductos>
+            <Footer></Footer>
         </div>
     )
 }
