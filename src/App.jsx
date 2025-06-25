@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Notebooks from "./pages/Notebooks";
 import Productos from "./pages/Productos";
 import Ayuda from "./pages/Ayuda";
+import ProductosCategoria from "./pages/ProductosCategoria";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/armarpc" element={<ArmaTuPC/>} />
 
         <Route path="/ayuda" element={<Ayuda/>} />
+
+        <Route path="/productos/categoria/:id_categoria" element={<ProductosCategoria/>} />
 
       </Routes>
     </>

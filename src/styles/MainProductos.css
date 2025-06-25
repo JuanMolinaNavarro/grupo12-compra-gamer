@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-rows: 200px 200px 80vh;
     grid-template-columns: 1fr 3fr;
-    gap: 5vw;
+    gap: 10vw;
     width: 40vw;
     margin: 0px 25vw;
 }
@@ -26,5 +26,8 @@ body {
 .containerDestacados {
     width: auto;
     text-align: start;
+    padding: 0 15vw;
 }
+
+
 

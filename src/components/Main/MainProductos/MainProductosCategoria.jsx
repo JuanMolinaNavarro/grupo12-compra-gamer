@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react'
-import Aside from './MainProductos/Aside'
-import NestedToggle from './MainProductos/NestedToggle'
-import Cards from './Cards';
-//import productos from '../../data/productos.json'
-import NavBar from './NavBar'
-import '../../styles/MainProductos.css'
+import Aside from './Aside'
+import Cards from '../Cards'
+import NavBar from '../NavBar'
+import '../../../styles/MainProductos.css'
 import axios from 'axios'
+import { useParams } from 'react-router-dom'
 
 
-const MainProductos = () => {
+const MainProductosCategoria = () => {
     
+    const { id_categoria } = useParams()
     const [data,SetData] = useState([])
 
     useEffect(() => {
-      axios.get(`http://localhost:8000/productos`)
+      axios.get(`http://localhost:8000/productos/categoria/${id_categoria}`)
         .then(response => {
             SetData(response.data)
         })
         .catch(error =>{
             console.error("Error al obtener datos", error)
         })
-    }, [])
+    }, [id_categoria])
     
 
     return (
@@ -43,4 +43,4 @@ const MainProductos = () => {
     )
 }
 
-export default MainProductos
+export default MainProductosCategoria

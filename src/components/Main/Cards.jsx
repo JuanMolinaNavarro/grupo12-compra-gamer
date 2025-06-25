@@ -6,7 +6,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 const Cards = ({ producto }) => {
   return (
     <div className="card-producto">
-      <img src={producto.imagen} alt={producto.nombre} className="producto-imagen" />
+      <img src={producto.imagen_url} alt={producto.nombre} className="producto-imagen" />
       <p className="producto-nombre">{producto.nombre}</p>
       <div className="producto-precio-contenedor">
         <span className="producto-precio">${producto.precio.toLocaleString('es-CL')}</span>

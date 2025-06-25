@@ -7,58 +7,83 @@ const Aside = () => {
     return (
         <div>
             <NestedToggle title={"Categorías"}>
-                <NestedToggle title={"Equipos y Notebooks"} children={"Notebooks"}></NestedToggle>
+                <NestedToggle title={"Equipos y Notebooks"}>
+                    <Link to={"/productos/categoria/1"}>Notebooks</Link>
+                </NestedToggle>
                 <NestedToggle title={"Procesadores"}>
-                    <p>
-                        <Link>Procesadores AMD</Link>
-                    </p>
-                    <p>
-                        <Link>Procesadores Intel</Link>
-                    </p>
+
+                    <Link>Procesadores AMD</Link>
+                    <br />
+                    <Link>Procesadores Intel</Link>
+
                 </NestedToggle>
                 <NestedToggle title={"Mothers"}>
-                    <p>
-                        <Link>Mothers AMD</Link>
-                    </p>
-                    <p>
-                        <Link>Mothers Intel</Link>
-                    </p>
+
+                    <Link>Mothers AMD</Link>
+                    <br />
+                    <Link>Mothers Intel</Link>
+
                 </NestedToggle>
                 <NestedToggle title={"Placas de Video"}>
-                    <p>
+                    <Link>
                         Placas de Video GeForce
-                    </p>
-                    <p>
+                    </Link>
+                    <br />
+
+                    <Link>
                         Placas de Video Radeon AMD
-                    </p>
+                    </Link>
                 </NestedToggle>
-                <NestedToggle title={"Memorias RAM"} children={"Memorias"}></NestedToggle>
+                <NestedToggle title={"Memorias RAM"}>
+                    <Link>Memorias</Link>
+                </NestedToggle>
                 <NestedToggle title={"Almacenamiento"}>
-                    <p>
+                    <Link>
                         Discos Externos
-                    </p>
-                    <p>
+                    </Link>
+                    <br />
+
+                    <Link>
                         Discos Rigidos
-                    </p>
-                    <p>
+                    </Link>
+                    <br />
+
+                    <Link>
                         Discos Solidos SSD
-                    </p>
+                    </Link>
                 </NestedToggle>
                 <NestedToggle title={"Refrigeracion"}>
-                    <p>Coolers Fan</p>
-                    <p>Coolers CPU</p>
-                    <p>Pasta Termica</p>
+                    <Link>Coolers Fan</Link>
+                    <br />
+
+                    <Link>Coolers CPU</Link>
+                    <br />
+
+                    <Link>Pasta Termica</Link>
                 </NestedToggle>
-                <NestedToggle title={"Gabinetes"} children={"Gabinetes"}>
+                <NestedToggle title={"Gabinetes"}>
+                    <Link>Gabinetes</Link>
                 </NestedToggle>
-                <NestedToggle title={"Fuentes"} children={"Fuentes de Alimentación"}></NestedToggle>
-                <NestedToggle title={"Monitores"} children={"Monitores y Pantallas"}></NestedToggle>
+                <NestedToggle title={"Fuentes"}>
+                    <Link>Fuentes de Alimentación</Link>
+                </NestedToggle>
+                <NestedToggle title={"Monitores"}>
+                    <Link>Monitores y Pantallas</Link>
+                </NestedToggle>
                 <NestedToggle title={"Perifericos"}>
-                    <p>Auriculares</p>
-                    <p>Teclados</p>
-                    <p>Mouses</p>
-                    <p>Joysticks</p>
-                    <p>Mouse Pads</p>
+                    <Link>Auriculares</Link>
+                    <br />
+
+                    <Link>Teclados</Link>
+                    <br />
+
+                    <Link>Mouses</Link>
+                    <br />
+
+                    <Link>Joysticks</Link>
+                    <br />
+
+                    <Link>Mouse Pads</Link>
                 </NestedToggle>
             </NestedToggle>
 
