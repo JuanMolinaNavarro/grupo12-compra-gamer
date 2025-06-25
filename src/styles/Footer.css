@@ -2,25 +2,18 @@
   margin: 0;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12vh;
   background-color: #212121;
   color: #ffffffde;
   position: relative;
-  left: 0;
-  bottom: 0;
+
   width: 100vw;
   z-index: 100;
 }
 
-.footer-container div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
 #data-fiscal {
   width: 73px;
   height: 100px;
@@ -59,10 +52,6 @@
   border-color: #fff;
   color: #f0320a;
 }
-.footer-container div:not(:first-child) {
-  border-left: 1px solid #ffffff;
-  padding-left: 30px;
-}
 
 .footer-container__div {
   display: flex;
@@ -70,6 +59,7 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+  margin-top: 3vh;
 }
 
 #btn-terminos {
@@ -77,4 +67,32 @@
 }
 #btn-terminos:hover {
   background-color: transparent;
+}
+.flex-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-redes button {
+  background: none;
+}
+.icon-redes {
+  font-size: 24px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.flex-redes button {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+.flex-redes button:hover {
+  background: #fff;
+  color: #f0320a;
+  .icon-redes {
+    color: #f0320a;
+  }
 }
