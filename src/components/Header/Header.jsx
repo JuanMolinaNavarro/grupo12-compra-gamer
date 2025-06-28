@@ -50,6 +50,11 @@ const Header = () => {
             <FaRegUser color="#f0320a" /> Ingresá
           </button>
         )}
+        <Link to='/admin'>
+          <button style={{ backgroundColor: '#28a745', color: 'white', border: 'none', padding: '8px 12px', borderRadius: '4px', fontSize: '12px' }}>
+            Admin
+          </button>
+        </Link>
         <Link to='/carrito'>
           <button>
             <MdOutlineShoppingCart color="#f0320a" />
