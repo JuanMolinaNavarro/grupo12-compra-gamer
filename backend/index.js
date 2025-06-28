@@ -4,6 +4,7 @@ const routesProducts = require("./routes/products")
 const routesAuth = require("./routes/auth")
 const routesCategorias = require("./routes/categorias")
 const routesPagos = require("./routes/pagos")
+const routesPedidos = require("./routes/pedidos")
 const cors = require('cors')
 
 
@@ -17,6 +18,7 @@ app.use("/",routesProducts)
 app.use("/auth",routesAuth)
 app.use("/",routesCategorias)
 app.use("/",routesPagos)
+app.use("/pedidos",routesPedidos)
 
 
 app.get("/",(req,res)=>{

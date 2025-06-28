@@ -1,0 +1,269 @@
+.carrito-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 70vh;
+}
+
+.carrito-container h2 {
+  color: #f0320a;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.carrito-vacio {
+  text-align: center;
+  padding: 50px;
+  color: #666;
+}
+
+.carrito-vacio p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.carrito-items {
+  margin-bottom: 30px;
+}
+
+.carrito-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.item-imagen {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.item-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.item-info h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.item-precio {
+  color: #f0320a;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.item-cantidad {
+  margin-right: 20px;
+}
+
+.item-cantidad label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.item-cantidad input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  color: black;
+}
+
+.item-subtotal {
+  margin-right: 20px;
+  font-weight: bold;
+  color: #333;
+  min-width: 120px;
+  text-align: right;
+}
+
+.btn-remover {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-remover:hover {
+  background-color: #c82333;
+}
+
+.carrito-total {
+  text-align: right;
+  padding: 20px;
+  border-top: 2px solid #f0320a;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.carrito-total h3 {
+  color: #f0320a;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.btn-checkout {
+  background-color: #f0320a;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-checkout:hover {
+  background-color: #d02a08;
+}
+
+.btn-checkout:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.checkout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.checkout-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.checkout-content h3 {
+  color: #f0320a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.checkout-section {
+  margin-bottom: 25px;
+}
+
+.checkout-section h4 {
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.checkout-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.checkout-section input:focus {
+  outline: none;
+  border-color: #f0320a;
+}
+
+.checkout-total {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.checkout-total h4 {
+  color: #f0320a;
+  margin: 0;
+  font-size: 20px;
+}
+
+.checkout-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-cancelar {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  flex: 1;
+}
+
+.btn-cancelar:hover {
+  background-color: #5a6268;
+}
+
+.btn-pagar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.btn-pagar:hover {
+  background-color: #218838;
+}
+
+.btn-pagar:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .carrito-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .item-imagen {
+    margin: 0 0 15px 0;
+  }
+  
+  .item-info, .item-cantidad, .item-subtotal {
+    margin: 10px 0;
+  }
+  
+  .checkout-buttons {
+    flex-direction: column;
+  }
+}

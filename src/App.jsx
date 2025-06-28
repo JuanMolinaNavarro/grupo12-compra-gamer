@@ -11,6 +11,7 @@ import Admin from "./pages/Admin";
 import AdminPagos from "./pages/AdminPagos";
 import AdminMarcas from "./pages/AdminMarcas";
 import AdminCategorias from "./pages/AdminCategorias";
+import Carrito from "./pages/Carrito";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/armarpc" element={<ArmaTuPC/>} />
 
         <Route path="/ayuda" element={<Ayuda/>} />
+
+        <Route path="/carrito" element={<Carrito/>} />
 
         <Route path="/productos/categoria/:id_categoria" element={<ProductosCategoria/>} />
 

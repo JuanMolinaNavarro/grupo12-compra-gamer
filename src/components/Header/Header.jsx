@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import cgLogo from "../../assets/compra-gamer.svg";
 import "../../styles/Header.css";
 import { MdOutlineShoppingCart } from "react-icons/md";
@@ -7,6 +7,7 @@ import { IoIosSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
 import AuthModal from "../Auth/AuthModal";
 import useAuthStore from "../../stores/authStore";
+import useCartStore from "../../stores/cartStore";
 import "../../styles/AuthModal.css";
 
 const Header = () => {
@@ -14,6 +15,14 @@ const Header = () => {
   
   // Estados del store de autenticación
   const { usuario, isLoggedIn, logout } = useAuthStore();
+  
+  // Estado del carrito
+  const { getTotalItems, initializeTotal } = useCartStore();
+  const totalItems = getTotalItems();
+
+  useEffect(() => {
+    initializeTotal();
+  }, [initializeTotal]);
 
   const onLoginClick = () => setShowLogin(true);
   const handleClose = () => setShowLogin(false);
@@ -56,8 +65,24 @@ const Header = () => {
           </button>
         </Link>
         <Link to='/carrito'>
-          <button>
+          <button style={{ position: 'relative' }}>
             <MdOutlineShoppingCart color="#f0320a" />
+            {totalItems > 0 && (
+              <span style={{
+                position: 'absolute',
+                top: '-5px',
+                right: '-5px',
+                backgroundColor: '#f0320a',
+                color: 'white',
+                borderRadius: '50%',
+                padding: '2px 6px',
+                fontSize: '12px',
+                minWidth: '18px',
+                textAlign: 'center'
+              }}>
+                {totalItems}
+              </span>
+            )}
           </button>
         </Link>
       </div>
