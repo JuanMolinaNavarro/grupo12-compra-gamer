@@ -5,6 +5,7 @@ import NavBar from '../NavBar'
 import '../../../styles/MainProductos.css'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import Titulo from './Titulo'
 
 
 const MainProductosCategoria = () => {
@@ -16,6 +17,7 @@ const MainProductosCategoria = () => {
       axios.get(`http://localhost:8000/productos/categoria/${id_categoria}`)
         .then(response => {
             SetData(response.data)
+            console.log(data)
         })
         .catch(error =>{
             console.error("Error al obtener datos", error)
@@ -27,7 +29,7 @@ const MainProductosCategoria = () => {
         <div>
             <NavBar></NavBar>
             <div className='containerDestacados'>
-                <h4 style={{ fontWeight: '600' }}>Destacados</h4>
+                <h4 style={{ fontWeight: '600' }}>{data[0] ? data[0].categoria : 'Cargando...'}</h4>
                 <hr style={{ borderColor: 'black' }}/>
             </div>
             <div className='containerMain'>
