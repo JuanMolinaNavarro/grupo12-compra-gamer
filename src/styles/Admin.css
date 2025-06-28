@@ -16,9 +16,37 @@
   border-bottom: 2px solid #eee;
 }
 
-.admin-header h1 {
-  margin: 0;
+.admin-titulo h1 {
+  margin: 0 0 10px 0;
   color: #333;
+}
+
+.admin-navegacion {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-link {
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #6c757d;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.nav-link.active {
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 .btn-crear, .btn-volver {

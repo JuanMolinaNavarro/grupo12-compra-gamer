@@ -160,11 +160,16 @@ const AdminProductos = () => {
   return (
     <div className="admin-container">
       <div className="admin-header">
-        <h1>🛍️ Administración de Productos</h1>
+        <div className="admin-titulo">
+          <h1>🛍️ Administración de Productos</h1>
+          <div className="admin-navegacion">
+            <span className="nav-link active">Productos</span>
+            <Link to="/admin/pagos" className="nav-link">Pagos</Link>
+            <Link to="/admin/marcas" className="nav-link">Marcas</Link>
+            <Link to="/admin/categorias" className="nav-link">Categorías</Link>
+          </div>
+        </div>
         <div className="admin-actions">
-          <Link to="/admin/pagos" className="btn-navegacion">
-            💳 Ver Pagos
-          </Link>
           {vista === 'grid' && hayFiltrosActivos() && (
             <button className="btn-limpiar-filtros" onClick={limpiarFiltros}>
               🧹 Limpiar Filtros

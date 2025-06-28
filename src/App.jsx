@@ -9,6 +9,9 @@ import ProductosCategoria from "./pages/ProductosCategoria";
 import ProductoMostrar from "./pages/ProductoMostrar";
 import Admin from "./pages/Admin";
 import AdminPagos from "./pages/AdminPagos";
+import AdminMarcas from "./pages/AdminMarcas";
+import AdminCategorias from "./pages/AdminCategorias";
+
 function App() {
   return (
     <>
@@ -28,6 +31,10 @@ function App() {
         <Route path="/admin" element={<Admin/>} />
 
         <Route path="/admin/pagos" element={<AdminPagos/>} />
+
+        <Route path="/admin/marcas" element={<AdminMarcas/>} />
+
+        <Route path="/admin/categorias" element={<AdminCategorias/>} />
 
       </Routes>
     </>

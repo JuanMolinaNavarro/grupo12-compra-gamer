@@ -145,11 +145,16 @@ const AdminPagos = () => {
   return (
     <div className="admin-container">
       <div className="admin-header">
-        <h1>💳 Administración de Pagos</h1>
+        <div className="admin-titulo">
+          <h1>💳 Administración de Pagos</h1>
+          <div className="admin-navegacion">
+            <Link to="/admin" className="nav-link">Productos</Link>
+            <span className="nav-link active">Pagos</span>
+            <Link to="/admin/marcas" className="nav-link">Marcas</Link>
+            <Link to="/admin/categorias" className="nav-link">Categorías</Link>
+          </div>
+        </div>
         <div className="admin-actions">
-          <Link to="/admin" className="btn-navegacion">
-            🛍️ Ver Productos
-          </Link>
           {vista === 'grid' && hayFiltrosActivos() && (
             <button className="btn-limpiar-filtros" onClick={limpiarFiltros}>
               🧹 Limpiar Filtros
