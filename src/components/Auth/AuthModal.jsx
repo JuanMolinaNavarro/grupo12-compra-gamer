@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Modal, Button, Form } from "react-bootstrap";
+import { Modal, Button, Form, Alert } from "react-bootstrap";
 import "../../styles/AuthModal.css";
 import { RiVideoFill } from "react-icons/ri";
+import useAuthStore from "../../stores/authStore";
 
 const AuthModal = ({ show, handleClose }) => {
   //en esta parte utilizo show en el caso de que sea true, se me muestra el modal en el caso que sea false no se me lo muestra y el handleClose se ejecuta cuando cera el modal
@@ -16,6 +17,9 @@ const AuthModal = ({ show, handleClose }) => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  // Estados del store de autenticación
+  const { login, register, loading, error, clearError } = useAuthStore();
+
   //esto lo hacemos para cuando tenemos llenos lo inputs los reseteamos
   const resetFields = () => {
     setFirstName("");
@@ -25,6 +29,7 @@ const AuthModal = ({ show, handleClose }) => {
     setPhoneNumber("");
     setPassword("");
     setConfirmPassword("");
+    clearError(); // Limpiar errores al resetear campos
   };
 
   // el switchToregister y el login sirven poder cambiar de login y register y ademas limpia el input
@@ -38,28 +43,31 @@ const AuthModal = ({ show, handleClose }) => {
     setMode("login");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // en este apartado realizamos la logica del inicio  de sesio la cual al ingresar nos muestra el email y la clave y al ingresar al register nos muestra los demas inputs
+    // en este apartado realizamos la logica del inicio de sesion
     if (mode === "login") {
-      console.log("Login con:", email, password);
+      const result = await login(email, password);
+      if (result.success) {
+        resetFields();
+        handleClose();
+      }
     } else {
       if (password !== confirmPassword) {
         alert("Las contraseñas no coinciden");
         return;
       }
-      console.log("Registro con:", {
-        firstName,
-        lastName,
-        email,
-        phoneCode,
-        phoneNumber,
-        password,
-      });
+      
+      // Combinar código de área y número de teléfono
+      const telefono = phoneCode && phoneNumber ? `${phoneCode}${phoneNumber}` : null;
+      
+      const result = await register(firstName, lastName, email, password, telefono);
+      if (result.success) {
+        resetFields();
+        handleClose();
+      }
     }
-
-    handleClose();
   };
 
   return (
@@ -76,6 +84,13 @@ const AuthModal = ({ show, handleClose }) => {
             ? "Para comenzar ingresa tu mail"
             : "Complete los campos para crear su cuenta"}
         </p>
+
+        {/* Mostrar errores si existen */}
+        {error && (
+          <Alert variant="danger" onClose={clearError} dismissible>
+            {error}
+          </Alert>
+        )}
 
         <Form onSubmit={handleSubmit}>
           {mode === "register" && (
@@ -176,8 +191,9 @@ const AuthModal = ({ show, handleClose }) => {
             type="submit"
             className="w-100"
             style={{ backgroundColor: "#f0320a", borderColor: "#f0320a" }}
+            disabled={loading}
           >
-            {mode === "login" ? "Iniciar Sesión" : "Registrarse"}
+            {loading ? "Cargando..." : (mode === "login" ? "Iniciar Sesión" : "Registrarse")}
           </Button>
           {/* este es el btn para cambiar de login a register */}
           {mode === "login" ? (

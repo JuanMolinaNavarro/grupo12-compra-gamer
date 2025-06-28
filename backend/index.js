@@ -1,6 +1,7 @@
 const express = require("express")
 const {connection} = require("./config/database")
 const routesProducts = require("./routes/products")
+const routesAuth = require("./routes/auth")
 const cors = require('cors')
 
 
@@ -11,6 +12,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use("/",routesProducts)
+app.use("/auth",routesAuth)
 
 
 app.get("/",(req,res)=>{
