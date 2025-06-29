@@ -15,22 +15,41 @@ const getAllCategorias = (req, res) => {
   })
 }
 
-// Obtener categoría por ID
-const getCategoriaById = (req, res) => {
-  const { id } = req.params
-  const query = "SELECT * FROM categorias WHERE id = ?"
-  
+const getProductosBySubcategoria = (req, res) => {
+  const { id } = req.params;
+  const query = "SELECT * FROM Productos WHERE id_sub = ?";
+
   connection.query(query, [id], (err, results) => {
     if (err) {
-      console.log(err)
-      return res.status(500).json({ error: "Error al obtener categoría" })
+      console.log(err);
+      return res.status(500).json({ error: "Error al obtener productos" });
     }
     if (results.length === 0) {
-      return res.status(404).json({ error: "Categoría no encontrada" })
+      return res.status(404).json({ error: "No se encontraron productos en esta subcategoría" });
     }
-    res.json(results[0])
-  })
+    res.json(results);
+  });
 }
+
+
+
+// Obtener categoría por ID
+const getCategoriaById = (req, res) => {
+  const { id } = req.params;
+  const query = "SELECT * FROM Productos WHERE id_sub = ?";
+
+  connection.query(query, [id], (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({ error: "Error al obtener productos" });
+    }
+    if (results.length === 0) {
+      return res.status(404).json({ error: "No se encontraron productos en esta subcategoría" });
+    }
+    res.json(results); // Envía todos los resultados como un array
+  });
+}
+
 
 // Crear nueva categoría
 const createCategoria = (req, res) => {

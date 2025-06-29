@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import '../../styles/Cards.css';
 import { MdOutlineShoppingCart } from "react-icons/md";
 import useCartStore from '../../stores/cartStore';
-
+import { Link } from 'react-router-dom';
 const Cards = ({ producto }) => {
   const addToCart = useCartStore(state => state.addToCart)
   const [added, setAdded] = useState(false)
@@ -15,9 +15,10 @@ const Cards = ({ producto }) => {
   }
 
   return (
-    <div className="card-producto">
-      <img src={producto.imagen_url} alt={producto.nombre} className="producto-imagen" />
+    <div  className="card-producto" to="">
+      <img as={Link} src={producto.imagen_url} alt={producto.nombre} className="producto-imagen" />
       <p className="producto-nombre">{producto.nombre}</p>
+      <Link to={`/productos/mostrar/${producto.id_producto}`}  >Ver producto</Link>
       <div className="producto-precio-contenedor">
         <span className="producto-precio">${producto.precio.toLocaleString('es-CL')}</span>
         <button 

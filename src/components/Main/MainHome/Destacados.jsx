@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Destacados = ({data}) => {
 
-  const primerosSeis = data.slice(0, 6);
+  const primerosSeis = data.slice(0, 5);
 
   return (
     <>

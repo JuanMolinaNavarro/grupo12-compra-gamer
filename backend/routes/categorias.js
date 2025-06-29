@@ -9,6 +9,7 @@ const {
   getMarcaById,
   createMarca,
   updateMarca,
+  getProductosBySubcategoria,
   deleteMarca
 } = require("../controllers/categorias")
 
