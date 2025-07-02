@@ -30,6 +30,7 @@ input {
 input:focus {
   border: 0px;
   outline: 0px;
+  color: #fff;
 }
 
 button {

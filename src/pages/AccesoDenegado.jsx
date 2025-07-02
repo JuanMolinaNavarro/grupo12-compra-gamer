@@ -15,7 +15,7 @@ const AccesoDenegado = () => {
         <p className="error-subtitle">403 - Forbidden</p>
 
         <div className="error-message">
-          <p>No tienes permisos para acceder a esta sección.</p>
+          <p>No tiene permisos para acceder a esta sección.</p>
           <p>
             Solo los administradores pueden acceder al panel de administración.
           </p>
