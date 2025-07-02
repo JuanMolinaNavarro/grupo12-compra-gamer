@@ -87,6 +87,34 @@ const crearPedido = async (req, res) => {
 
         Promise.all(detallePromises)
           .then(() => {
+            // Actualizar stock de productos
+            const stockPromises = items.map(item => {
+              return new Promise((resolve, reject) => {
+                const stockQuery = `
+                  UPDATE Productos 
+                  SET stock = stock - ? 
+                  WHERE id_producto = ? AND stock >= ?
+                `;
+                
+                connection.query(stockQuery, [
+                  item.cantidad,
+                  item.id_producto,
+                  item.cantidad
+                ], (err, result) => {
+                  if (err) {
+                    reject(err);
+                  } else if (result.affectedRows === 0) {
+                    reject(new Error(`Stock insuficiente para el producto ${item.id_producto}`));
+                  } else {
+                    resolve(result);
+                  }
+                });
+              });
+            });
+
+            return Promise.all(stockPromises);
+          })
+          .then(() => {
             // Crear registro de pago (simulado)
             const pagoQuery = `
               INSERT INTO Pagos (id_pedido, id_metodo, monto) 
@@ -135,12 +163,20 @@ const crearPedido = async (req, res) => {
               });
             });
           })
-          .catch(() => {
+          .catch((error) => {
             connection.rollback(() => {
-              res.status(500).json({ 
-                success: false, 
-                message: 'Error al guardar detalles del pedido' 
-              });
+              // Verificar si es un error de stock insuficiente
+              if (error.message && error.message.includes('Stock insuficiente')) {
+                res.status(400).json({ 
+                  success: false, 
+                  message: error.message 
+                });
+              } else {
+                res.status(500).json({ 
+                  success: false, 
+                  message: 'Error al procesar el pedido' 
+                });
+              }
             });
           });
       });

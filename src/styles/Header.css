@@ -25,6 +25,7 @@ input {
   border-radius: 3px;
   border: 0px solid #fff;
   background-color: transparent;
+  color: #fff;
 }
 
 input:focus {
