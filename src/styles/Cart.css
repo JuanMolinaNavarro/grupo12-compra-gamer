@@ -249,6 +249,10 @@
   cursor: not-allowed;
 }
 
+input{
+  color: black;
+}
+
 @media (max-width: 768px) {
   .carrito-item {
     flex-direction: column;

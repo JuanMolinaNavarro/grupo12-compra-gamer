@@ -118,6 +118,31 @@ const getProductosConCategoria = (req, res) => {
   });
 };
 
+const searchProducts = (req, res) => {
+  const { q } = req.query; // q es el parámetro de búsqueda
+
+  if (!q) {
+    return res.status(400).json({ error: "Parámetro de búsqueda requerido" });
+  }
+
+  const query = `
+    SELECT p.*, c.nombre AS categoria, m.nombre AS marca
+    FROM productos p
+    LEFT JOIN categorias c ON p.id_categoria = c.id_categoria
+    LEFT JOIN marcas m ON p.id_marca = m.id_marca
+    WHERE p.nombre LIKE ?
+  `;
+
+  const searchTerm = `%${q}%`;
+
+  connection.query(query, [searchTerm], (err, results) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+    res.json(results);
+  });
+};
+
 module.exports = {
   getAllProducts,
   getOneProduct,
@@ -125,4 +150,5 @@ module.exports = {
   updateProduct,
   createProduct,
   getProductosConCategoria,
+  searchProducts,
 };

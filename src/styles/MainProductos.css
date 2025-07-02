@@ -15,12 +15,16 @@ body {
     gap: 10vw;
     width: 40vw;
     margin: 0px 25vw;
+    height: 100vh;
 }
 
 .cardContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+    width: max-content;
+    height: 80vh;
+    overflow: auto;
 }
 
 .containerDestacados {
