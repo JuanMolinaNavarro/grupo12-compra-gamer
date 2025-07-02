@@ -1,0 +1,311 @@
+/* Estilos específicos para AdminPagos */
+
+/* Grid de pagos */
+.pagos-header {
+  grid-template-columns: 80px 150px 200px 120px 120px 100px 150px 100px 120px;
+}
+
+.grid-body .grid-row {
+  grid-template-columns: 80px 150px 200px 120px 120px 100px 150px 100px 120px;
+}
+
+/* Celdas específicas de pagos */
+.pago-id {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.usuario-info {
+  font-size: 14px;
+}
+
+.email-cell {
+  font-size: 12px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.monto-cell {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.metodo-pago {
+  background-color: #e9ecef;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.fecha-cell {
+  font-size: 12px;
+  color: #666;
+}
+
+.pedido-badge {
+  background-color: #6c757d;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-ver-detalle {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.btn-ver-detalle:hover {
+  background-color: #138496;
+}
+
+/* Estados del pedido */
+.estado-cell {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.estado-pagado {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.estado-pendiente {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.estado-enviado {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.estado-cancelado {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Filtros específicos para pagos */
+.pagos-filtros {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+/* Detalle del pago */
+.pago-detalle {
+  max-width: 1000px;
+}
+
+.detalle-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.seccion-pago,
+.seccion-pedido,
+.seccion-usuario,
+.seccion-productos {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.seccion-pago {
+  border-left-color: #28a745;
+}
+
+.seccion-pedido {
+  border-left-color: #17a2b8;
+}
+
+.seccion-usuario {
+  border-left-color: #ffc107;
+}
+
+.seccion-productos {
+  border-left-color: #6f42c1;
+}
+
+.detalle-sections h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* Badges y elementos destacados */
+.pago-id-badge,
+.pedido-id-badge {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.monto-destacado,
+.total-destacado {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.email-destacado {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.estado-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Grid de productos */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.producto-card {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.producto-imagen {
+  height: 120px;
+  overflow: hidden;
+}
+
+.producto-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-info {
+  padding: 15px;
+}
+
+.producto-info h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.producto-categoria {
+  margin: 0 0 12px 0;
+  color: #666;
+  font-size: 12px;
+}
+
+.producto-detalles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cantidad,
+.precio-unitario,
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cantidad label,
+.precio-unitario label,
+.subtotal label {
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+}
+
+.subtotal-destacado {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.loading-productos {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+/* Resumen de productos */
+.resumen-productos {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #28a745;
+  margin-top: 20px;
+}
+
+.total-productos,
+.total-general {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.total-general {
+  font-size: 18px;
+  color: #28a745;
+  border-top: 1px solid #dee2e6;
+  padding-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pagos-header,
+  .grid-body .grid-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .pagos-header {
+    display: none;
+  }
+  
+  .grid-row {
+    display: block;
+    padding: 15px;
+  }
+  
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .detalle-sections {
+    gap: 20px;
+  }
+}

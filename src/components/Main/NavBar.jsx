@@ -8,7 +8,6 @@ const NavBar = () => {
             <nav>
                 <Link to="/productos">Productos</Link>
                 <Link to="/productos/categoria/1">Notebooks</Link>
-                <Link to="/armarpc">Armá tu PC</Link>
                 <Link to="/ayuda">Ayuda</Link>
             </nav>
         </div>

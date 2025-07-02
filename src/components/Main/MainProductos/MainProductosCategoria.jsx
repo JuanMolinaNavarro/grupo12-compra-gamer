@@ -14,7 +14,7 @@ const MainProductosCategoria = () => {
     const [data,SetData] = useState([])
 
     useEffect(() => {
-      axios.get(`http://localhost:8000/productos/categoria/${id_categoria}`)
+      axios.get(`http://localhost:8000/categorias/${id_categoria}`)
         .then(response => {
             SetData(response.data)
             console.log(data)

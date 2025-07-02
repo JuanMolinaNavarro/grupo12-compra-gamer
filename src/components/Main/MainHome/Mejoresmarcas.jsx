@@ -1,70 +1,63 @@
-import { Button, Card, Container,Row,Col} from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-const Mejoresmarcas = () => {
+import { Button, Card, Container, Row, Col } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-    const destacados = [
-    {
-      nombre: "Auriculares Corsair",
-      text: "Surround Dolby Audio 7.1",
-      URL: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40800_Auriculares_Corsair_HS55_White_Surround_Dolby_Audio_7.1_PC_MAC_SWITCH_PS5_bee3805e-mini.jpg",
-      precio: "90.500",
-      id: "1"
-    },
-    {
-      nombre: "Auriculares Corsair",
-      text: "Surround Dolby Audio 7.1",
-      URL: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40800_Auriculares_Corsair_HS55_White_Surround_Dolby_Audio_7.1_PC_MAC_SWITCH_PS5_bee3805e-mini.jpg",
-      precio: "90.500",
-      id: "1"
-    },
-    {
-      nombre: "Auriculares Corsair",
-      text: "Surround Dolby Audio 7.1",
-      URL: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40800_Auriculares_Corsair_HS55_White_Surround_Dolby_Audio_7.1_PC_MAC_SWITCH_PS5_bee3805e-mini.jpg",
-      precio: "90.500",
-      id: "1"
-    },
+const Mejoresmarcas = ({ data }) => {
 
-  ]
+        const [mejores,SetMejores]=useState([])
+        const handleclickasus = ()=>{
+             const productosAsus = data.filter(item => item.id_marca === 2)
+             const Asusflltrado = productosAsus.slice(0,4)
+            SetMejores( Asusflltrado)
+        }
+        const handleclickcorsair = ()=>{
+            const productosCorsair = data.filter(item => item.id_marca === 4)
+            const Corsairflltrado = productosCorsair.slice(0,4)
+            SetMejores( Corsairflltrado)
+        }
+        const handleclicklogitech = ()=>{
+            const productosLogitech = data.filter(item => item.id_marca === 6)
+            const Logitechflltrado = productosLogitech.slice(0,4)
+            SetMejores( Logitechflltrado)
+        }
+
+        useEffect(() => {
+            handleclickasus();
+        }, [])
     return (
-        
         <>
-            <h3 className='text-start mt-3 mb-3 '>Descubri las  <strong> Mejores Marcas</strong> </h3>
+        
+            <h3 className='text-start mt-3 mb-3'>Descubrí las <strong>Mejores Marcas</strong></h3>
             <div className='d-flex align-items-left'>
-                <Button variant='danger' type='button' className="btn botonesMarcas ">
-                    <img src="https://imagenes.compragamer.com/assets/logos/marcas/asus%20logo%20black_Asus_zmLf3E.svg" alt="" />
+                <Button variant='danger' type='button' onClick={handleclickasus} className="btn botonesMarcas">
+                    <img src="https://imagenes.compragamer.com/assets/logos/marcas/asus%20logo%20black_Asus_zmLf3E.svg" alt="Asus" />
                 </Button>
-
-                <Button variant='danger' type='button'  className="btn botonesMarcas">
-                    <img src="https://imagenes.compragamer.com/assets/logos/marcas/logitech%20logo%20black_Logitech_YD2gnj.svg" alt="" />
+                <Button variant='danger' type='button' onClick={handleclicklogitech} className="btn botonesMarcas">
+                    <img src="https://imagenes.compragamer.com/assets/logos/marcas/logitech%20logo%20black_Logitech_YD2gnj.svg" alt="Logitech" />
                 </Button>
-                <Button variant='danger' type='button'  className="btn botonesMarcas">
-                    <img src="https://imagenes.compragamer.com/assets/logos/marcas/corsair%20logo%20black_Corsair_kBgqT9.svg" alt="" />
-                </Button>
-                <Button variant='danger' type='button'  className="btn botonesMarcas">
-                    <img src="https://imagenes.compragamer.com/assets/logos/marcas/01_logo_SS_horizontalblack_SteelSeries_41GJgS.svg" alt="" />
+                <Button variant='danger' type='button' onClick={handleclickcorsair} className="btn botonesMarcas">
+                    <img src="https://imagenes.compragamer.com/assets/logos/marcas/corsair%20logo%20black_Corsair_kBgqT9.svg" alt="Corsair" />
                 </Button>
             </div>
 
             <Container fluid>
                 <Row>
-                    {destacados.map((destacados, index) => (
-                        <Col sm={6} md={3} className="mb-4" key={index} >
-                            <Card as={Link} className=" cardDestacado" to={`/Producto/${destacados.id}`}>
-                                <Card.Img variant="top" src={destacados.URL} className="" />
-                                <Card.Body className="d-flex flex-column justify-content-center ">
-                                    <Card.Title className=''>{destacados.nombre}</Card.Title>
-                                    <Card.Text>{destacados.text}</Card.Text>
-                                    <Card.Text><strong>${destacados.precio}</strong></Card.Text>
+                    {mejores.map((mejores) => (  
+                        <Col sm={6} md={3} className="mb-4" key={mejores.id_producto}>
+                            <Card as={Link} className="cardDestacado" to={`/productos/mostrar/${mejores.id_producto}`}>
+                                <Card.Img variant="top" src={mejores.imagen_url} className="img-fluid" />
+                                <Card.Body className="d-flex flex-column justify-content-center">
+                                    <Card.Title>{mejores.nombre}</Card.Title>
+                                    <Card.Text>{mejores.descripcion}</Card.Text>
+                                    <Card.Text><strong>${mejores.precio}</strong></Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                     ))}
                 </Row>
             </Container>
-
         </>
-    )
+    );
 }
 
-export default Mejoresmarcas
+export default Mejoresmarcas;

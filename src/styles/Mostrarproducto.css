@@ -1,0 +1,13 @@
+.colortexto{
+    color:  orangered;
+}
+
+.btnsumar{
+    background-color:  orangered;
+    border-color: orangered;
+}
+.btnsumar:hover{
+    background-color: orangered;
+    border-color: orangered;
+
+}

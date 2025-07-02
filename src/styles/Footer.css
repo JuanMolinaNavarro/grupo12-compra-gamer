@@ -8,9 +8,11 @@
   gap: 12vh;
   background-color: #212121;
   color: #ffffffde;
-  position: relative;
-
+  position: static;
+  bottom: 0;
   width: 100vw;
+  padding: 2rem 0;
+  margin-top: 2rem;
   z-index: 100;
 }
 

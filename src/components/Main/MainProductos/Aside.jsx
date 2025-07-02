@@ -12,78 +12,78 @@ const Aside = () => {
                 </NestedToggle>
                 <NestedToggle title={"Procesadores"}>
 
-                    <Link>Procesadores AMD</Link>
+                    <Link to={"/productos/categoria/2"} >Procesadores AMD</Link>
                     <br />
-                    <Link>Procesadores Intel</Link>
+                    <Link to={"/productos/categoria/3"}>Procesadores Intel</Link>
 
                 </NestedToggle>
                 <NestedToggle title={"Mothers"}>
 
-                    <Link>Mothers AMD</Link>
+                    <Link to={"/productos/categoria/4"}>Mothers AMD</Link>
                     <br />
-                    <Link>Mothers Intel</Link>
+                    <Link to={"/productos/categoria/5"}>Mothers Intel</Link>
 
                 </NestedToggle>
                 <NestedToggle title={"Placas de Video"}>
-                    <Link>
+                    <Link to={"/productos/categoria/6"}>
                         Placas de Video GeForce
                     </Link>
                     <br />
 
-                    <Link>
+                    <Link to={"/productos/categoria/7"}>
                         Placas de Video Radeon AMD
                     </Link>
                 </NestedToggle>
                 <NestedToggle title={"Memorias RAM"}>
-                    <Link>Memorias</Link>
+                    <Link to={"/productos/categoria/8"}>Memorias</Link>
                 </NestedToggle>
                 <NestedToggle title={"Almacenamiento"}>
-                    <Link>
+                    <Link to={"/productos/categoria/9"}> 
                         Discos Externos
                     </Link>
                     <br />
 
-                    <Link>
+                    <Link to={"/productos/categoria/10"}>
                         Discos Rigidos
                     </Link>
                     <br />
 
-                    <Link>
+                    <Link to={"/productos/categoria/11"}>
                         Discos Solidos SSD
                     </Link>
                 </NestedToggle>
                 <NestedToggle title={"Refrigeracion"}>
-                    <Link>Coolers Fan</Link>
+                    <Link >Coolers Fan</Link>
                     <br />
 
-                    <Link>Coolers CPU</Link>
+                    <Link to={"/productos/categoria/12"}>Coolers CPU</Link>
                     <br />
 
-                    <Link>Pasta Termica</Link>
+                    <Link to={"/productos/categoria/13"}>Pasta Termica</Link>
                 </NestedToggle>
                 <NestedToggle title={"Gabinetes"}>
-                    <Link>Gabinetes</Link>
+                    <Link to={"/productos/categoria/15"}>Gabinetes</Link>
                 </NestedToggle>
                 <NestedToggle title={"Fuentes"}>
-                    <Link>Fuentes de Alimentación</Link>
+                    <Link to={"/productos/categoria/16"}>Fuentes de Alimentación</Link>
                 </NestedToggle>
                 <NestedToggle title={"Monitores"}>
-                    <Link>Monitores y Pantallas</Link>
+                    <Link to={"/productos/categoria/17"}>Monitores y Pantallas</Link>
                 </NestedToggle>
                 <NestedToggle title={"Perifericos"}>
-                    <Link>Auriculares</Link>
+                    <Link to={"/productos/categoria/18"}>Auriculares</Link>
                     <br />
 
-                    <Link>Teclados</Link>
+                    <Link to={"/productos/categoria/19"}>Teclados</Link>
                     <br />
 
-                    <Link>Mouses</Link>
+                    <Link to={"/productos/categoria/20"}>Mouses</Link>
                     <br />
 
-                    <Link>Joysticks</Link>
+                    <Link to={"/productos/categoria/21"}>Joysticks</Link>
                     <br />
 
-                    <Link>Mouse Pads</Link>
+                    <Link to={"/productos/categoria/22"}>Mouse Pads</Link>
                 </NestedToggle>
             </NestedToggle>
 

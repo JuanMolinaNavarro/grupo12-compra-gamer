@@ -1,8 +1,9 @@
 const express = require("express")
-const { getAllProducts, getOneProduct, deleteProduct, updateProduct, createProduct, getProductosConCategoria } = require("../controllers/products")
+const { getAllProducts, getOneProduct, deleteProduct, updateProduct, createProduct, getProductosConCategoria, searchProducts } = require("../controllers/products")
 
 const router = express.Router()
 
+router.get("/productos/search", searchProducts)
 router.get("/productos",getAllProducts)
 router.get("/productos/:id",getOneProduct)
 router.get("/productos/categoria/:id_categoria",getProductosConCategoria)
