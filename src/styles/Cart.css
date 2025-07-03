@@ -253,6 +253,10 @@ input{
   color: black;
 }
 
+input:focus{
+  color: black;
+}
+
 @media (max-width: 768px) {
   .carrito-item {
     flex-direction: column;

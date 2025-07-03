@@ -26,7 +26,7 @@ const login = (req, res) => {
 
     // Verificar si se encontró el usuario
     if (results.length === 0) {
-      return res.status(401).json({
+      return res.status(404).json({
         success: false,
         message: "Email o contraseña incorrectos",
       });
@@ -43,7 +43,7 @@ const login = (req, res) => {
         apellido: usuario.apellido,
         email: usuario.email,
         telefono: usuario.telefono,
-        is_adm: usuario.is_adm, // Incluir campo de administrador
+        is_adm: usuario.is_adm,
       },
     });
   });
