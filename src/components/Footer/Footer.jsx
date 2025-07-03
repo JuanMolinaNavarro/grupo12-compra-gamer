@@ -8,9 +8,25 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaTwitch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+/**
+ * Footer - Componente de pie de página del sitio web
+ *
+ * Este componente contiene información institucional, enlaces legales,
+ * redes sociales y certificaciones oficiales. Está diseñado para ser
+ * consistente en todas las páginas del sitio.
+ *
+ * Incluye:
+ * - Información fiscal (AFIP)
+ * - Enlaces de ayuda y políticas
+ * - Redes sociales de la empresa
+ * - Certificaciones laborales
+ * - Enlaces a términos legales
+ */
 const Footer = () => {
   return (
     <footer className="footer-container">
+      {/* Imagen de datos fiscales requerida por AFIP */}
       <div>
         <img
           id="data-fiscal"
@@ -18,6 +34,8 @@ const Footer = () => {
           alt="data-fiscal"
         />
       </div>
+
+      {/* Sección de enlaces de ayuda y políticas */}
       <div className="footer-container__div">
         <Link to="/ayuda">
           <button id="btn-ayuda">Ayuda</button>
@@ -25,8 +43,12 @@ const Footer = () => {
         <button id="btn-arrepentimiento">Botón de arrepentimiento</button>
         <button id="btn-terminos">Términos y condiciones</button>
       </div>
+
+      {/* Sección de redes sociales */}
       <div className="footer-container__div">
         <h3>Seguinos en</h3>
+
+        {/* Primera fila de redes sociales */}
         <div className="flex-redes">
           <a href="https://x.com/CompraGamerOK" target="_blank">
             <button>
@@ -60,6 +82,8 @@ const Footer = () => {
             </button>
           </a>
         </div>
+
+        {/* Segunda fila de redes sociales */}
         <div className="flex-redes">
           <a
             href="https://www.tiktok.com/@compragamer.com?lang=es"
@@ -76,21 +100,26 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
+      {/* Sección de certificaciones y reconocimientos */}
       <div className="footer-container__div">
+        {/* Certificación Great Place to Work */}
         <img
           id="great-place-to-work"
           src="https://imagenes.compragamer.com/assets/logos/gptw.svg"
           alt="great-place-to-work"
         />
+
+        {/* Enlace a certificación laboral externa */}
         <a
-          href="https://compragamer.hiringroom.com/jobs"
+          href="https://www.greatplacetowork.com.ar/lista-las-mejores/medianas-empresas/las-mejores-empresas-para-trabajar-en-argentina-2023"
           target="_blank"
-          style={{
-            color: "white",
-            decoration: "bold",
-          }}
         >
-          ¡Trabajá con nosotros!
+          <img
+            id="mejores-empresas"
+            src="https://imagenes.compragamer.com/assets/logos/mejores-empresas-2023.svg"
+            alt="mejores-empresas-para-trabajar"
+          />
         </a>
       </div>
     </footer>
