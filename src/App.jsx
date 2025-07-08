@@ -10,6 +10,7 @@ import AdminPagos from "./pages/AdminPagos";
 import AdminMarcas from "./pages/AdminMarcas";
 import AdminCategorias from "./pages/AdminCategorias";
 import Carrito from "./pages/Carrito";
+import DetalleFactura from "./pages/DetalleFactura";
 import ProtectedAdminRoute from "./components/ProtectedAdminRoute";
 import AccesoDenegado from "./pages/AccesoDenegado";
 import PaginaNoEncontrada from "./pages/PaginaNoEncontrada";
@@ -25,6 +26,8 @@ function App() {
         <Route path="/ayuda" element={<Ayuda />} />
 
         <Route path="/carrito" element={<Carrito />} />
+
+        <Route path="/detalle-factura" element={<DetalleFactura />} />
 
         <Route
           path="/productos/categoria/:id_categoria"

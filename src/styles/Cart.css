@@ -249,12 +249,51 @@
   cursor: not-allowed;
 }
 
-input{
+input {
   color: black;
 }
 
-input:focus{
+input:focus {
   color: black;
+}
+
+/* Estilos específicos para DetalleFactura */
+.detalle-factura-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 70vh;
+}
+
+.detalle-factura-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.cantidad-display {
+  font-weight: bold;
+  color: #333;
+  padding: 5px 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  display: inline-block;
+  min-width: 60px;
+  text-align: center;
+}
+
+.checkout-section p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.checkout-section p strong {
+  color: #f0320a;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -273,5 +312,14 @@ input:focus{
   
   .checkout-buttons {
     flex-direction: column;
+  }
+  
+  .detalle-factura-content {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .detalle-factura-container {
+    padding: 10px;
   }
 }

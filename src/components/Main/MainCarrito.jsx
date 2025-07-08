@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import useCartStore from '../../stores/cartStore';
 import useAuthStore from '../../stores/authStore';
 import '../../styles/Cart.css';
@@ -7,6 +8,7 @@ import axios from 'axios';
 const MainCarrito = () => {
   const { items, total, updateQuantity, removeFromCart, clearCart, initializeTotal } = useCartStore();
   const { usuario, isLoggedIn } = useAuthStore();
+  const navigate = useNavigate();
   
   const [showCheckout, setShowCheckout] = useState(false);
   const [direccion, setDireccion] = useState({
@@ -63,6 +65,27 @@ const MainCarrito = () => {
       return false;
     }
 
+    // Validar formato de fecha de vencimiento (MM/AA)
+    const fechaPattern = /^(0[1-9]|1[0-2])\/\d{2}$/;
+    if (!fechaPattern.test(pago.fecha_vencimiento)) {
+      alert('La fecha de vencimiento debe tener el formato MM/AA');
+      return false;
+    }
+
+    // Validar que la fecha de vencimiento sea posterior a la fecha actual
+    const [mes, anio] = pago.fecha_vencimiento.split('/');
+    const mesVencimiento = parseInt(mes, 10);
+    const anioVencimiento = parseInt(`20${anio}`, 10); // Convierte AA a 20AA
+    
+    const fechaActual = new Date();
+    const mesActual = fechaActual.getMonth() + 1; // getMonth() retorna 0-11
+    const anioActual = fechaActual.getFullYear();
+    
+    if (anioVencimiento < anioActual || (anioVencimiento === anioActual && mesVencimiento < mesActual)) {
+      alert('La fecha de vencimiento de la tarjeta debe ser posterior a la fecha actual');
+      return false;
+    }
+
     return true;
   };
 
@@ -81,46 +104,13 @@ const MainCarrito = () => {
       return;
     }
 
-    setLoading(true);
-
-    try {
-      // Crear pedido
-      const pedidoData = {
-        id_usuario: usuario.id_usuario,
-        total: total,
+    // Navegar a la página de detalle de factura con los datos del formulario
+    navigate('/detalle-factura', {
+      state: {
         direccion: direccion,
-        items: items.map(item => ({
-          id_producto: item.id_producto,
-          cantidad: item.cantidad,
-          precio_unitario: item.precio
-        }))
-      };
-
-      const response = await axios.post('http://localhost:8000/pedidos/crear', pedidoData);
-
-      if (response.data.success) {
-        alert('¡Pedido realizado con éxito!');
-        clearCart();
-        setShowCheckout(false);
-        setDireccion({
-          direccion: '',
-          ciudad: '',
-          provincia: '',
-          codigo_postal: '',
-          pais: 'Argentina'
-        });
-        setPago({
-          numero_tarjeta: '',
-          fecha_vencimiento: '',
-          cvv: '',
-          nombre_titular: ''
-        });
+        pago: pago
       }
-    } catch (error) {
-      alert('Error al procesar el pedido: ' + (error.response?.data?.message || 'Error del servidor'));
-    } finally {
-      setLoading(false);
-    }
+    });
   };
 
   if (items.length === 0) {
@@ -258,7 +248,7 @@ const MainCarrito = () => {
                 onClick={handleCheckout}
                 disabled={loading}
               >
-                {loading ? 'Procesando...' : 'Pagar'}
+                {loading ? 'Procesando...' : 'Continuar'}
               </button>
             </div>
           </div>
